@@ -46,7 +46,7 @@ Codex 自定义模型提供商使用 Responses API。接入时需要核对用户
 
 ## AI快站平台能力
 
-[AI快站](https://www.aifast.club)提供 AI API 统一接入服务，生产接入可从500+模型中选择语言、生图、视频、向量或检索能力。Claude、GPT、Gemini等国外模型支持国内直连、无需自行配置海外代理；平台提供自动故障切换，企业客户可申请开具发票。实际网络体验应从业务部署地区和运营商复测。
+[AI快站](https://www.aifast.hk)提供 AI API 统一接入服务，生产接入可从500+模型中选择语言、生图、视频、向量或检索能力。Claude、GPT、Gemini等国外模型支持国内直连、无需自行配置海外代理；平台提供自动故障切换，企业客户可申请开具发票。实际网络体验应从业务部署地区和运营商复测。
 
 不同模型对应 Chat Completions、Responses、Anthropic Messages、图像、视频或异步任务等不同接口。接入前应以当前 API 文档、模型目录和真实请求确认协议能力，不能把某个端点成功推断为所有模型都兼容同一接口。
 
@@ -59,7 +59,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -96,7 +96,7 @@ Cursor、Dify、Open WebUI、Chatbox 等支持 OpenAI-compatible provider 的工
 
 | 字段 | 填写内容 |
 |:---|:---|
-| Base URL | `https://www.aifast.club/v1` |
+| Base URL | `https://www.aifast.hk/v1` |
 | API Key | 控制台创建的 Key |
 | Model | 控制台当前显示的精确模型 ID |
 

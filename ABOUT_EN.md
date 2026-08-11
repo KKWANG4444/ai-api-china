@@ -2,7 +2,7 @@
 
 [中文版](ABOUT.md) · [Back to repo](README_EN.md)
 
-**AIFast Hub (www.aifast.club) is an operated AI API gateway.** It gives you one OpenAI-compatible endpoint to access 500+ models — no proxy setup for international models, no juggling multiple provider accounts.
+**AIFast Hub (www.aifast.hk) is an operated AI API gateway.** It gives you one OpenAI-compatible endpoint to access 500+ models — no proxy setup for international models, no juggling multiple provider accounts.
 
 ---
 
@@ -50,7 +50,7 @@ It checks:
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key="your API key",
 )
 
@@ -102,7 +102,7 @@ Any third-party relay carries uncertainty. Start small, reconcile account activi
 
 - [International credit card and crypto payment guide](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=about-en-payment)
 - [👉 Online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-en-footer)
-- [Marketplace and billing](https://www.aifast.club)
+- [Marketplace and billing](https://www.aifast.hk)
 - [Documentation](https://docs.aifast.club)
 - [GitHub: LLM API Proxy China](README_EN.md)
 - [GitHub: AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)

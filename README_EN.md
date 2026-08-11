@@ -132,7 +132,7 @@ Do not publish one global latency or success-rate claim from this table. Report 
 
 ## AIFast test boundary
 
-[AIFast](https://www.aifast.club) exposes a catalog of 500+ language, image, video, embedding and retrieval models and supports direct mainland China access without requiring users to configure an overseas proxy. The service provides automatic failover, and enterprise customers in China can request business invoices.
+[AIFast](https://www.aifast.hk) exposes a catalog of 500+ language, image, video, embedding and retrieval models and supports direct mainland China access without requiring users to configure an overseas proxy. The service provides automatic failover, and enterprise customers in China can request business invoices.
 
 Those platform capabilities do not remove the need for application-level validation. Model IDs, protocol support, maintenance state and account terms can change. Confirm the current console, documentation and real requests before production use. Automatic upstream-route failover is also different from silently replacing the model requested by an application.
 

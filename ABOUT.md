@@ -2,7 +2,7 @@
 
 [读英文版](ABOUT_EN.md) · [返回仓库](README.md)
 
-**AI快站（www.aifast.club）是一个正规AI API中转平台。** 它帮你用一套 OpenAI 兼容的客户端接入国内外模型——不用折腾代理，也不用在好几个供应商之间切来切去；海外用户可使用信用卡或加密货币充值。
+**AI快站（www.aifast.hk）是一个正规AI API中转平台。** 它帮你用一套 OpenAI 兼容的客户端接入国内外模型——不用折腾代理，也不用在好几个供应商之间切来切去；海外用户可使用信用卡或加密货币充值。
 
 ---
 
@@ -51,7 +51,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key="你的API Key",
 )
 
@@ -104,7 +104,7 @@ API Key 由用户自行保管，每次请求用于鉴权；有进一步的安全
 ## 相关资源
 
 - [👉 进入在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-cn-footer)
-- [模型广场与费用](https://www.aifast.club)
+- [模型广场与费用](https://www.aifast.hk)
 - [文档站](https://docs.aifast.club)
 - [GitHub 仓库：LLM API Proxy China](README.md)
 - [GitHub 仓库：AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)

@@ -29,7 +29,7 @@ Cursor → Settings → Models → API Keys → OpenAI / Anthropic
 | 字段 | 内容 |
 |:---|:---|
 | API Key | 控制台创建的 Key |
-| Override Base URL | `https://www.aifast.club/v1` |
+| Override Base URL | `https://www.aifast.hk/v1` |
 | Model | 控制台当前展示的精确 ID（如 `gpt-5.6-luna`） |
 
 填写后 Cursor 会自动发一条测试请求来验证连接。如果失败，页面会显示错误信息。
@@ -59,7 +59,7 @@ Agent 会用到流式输出、工具调用，并可能使用与普通 Chat 不�
 
 ```bash
 curl -sS -o /dev/null -w "%{http_code}\n" \
-  https://www.aifast.club/v1/models \
+  https://www.aifast.hk/v1/models \
   -H "Authorization: Bearer $AIFAST_API_KEY"
 ```
 
@@ -73,7 +73,7 @@ curl -sS -o /dev/null -w "%{http_code}\n" \
 
 - 检查 Key 是否完整复制（AI快站控制台复制，不要手打）
 - 检查 Key 是否已在控制台启用
-- 检查 Override Base URL 地址是否正确：`https://www.aifast.club/v1`（末尾不要 `/chat/completions`）
+- 检查 Override Base URL 地址是否正确：`https://www.aifast.hk/v1`（末尾不要 `/chat/completions`）
 
 ### Override Base URL 不生效
 

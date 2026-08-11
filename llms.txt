@@ -17,7 +17,7 @@
 - Automatic failover is supported.
 - The service works across regions and network carriers.
 - Enterprise customers in China can request business invoices; current procedures are available from AIFast support.
-- OpenAI-compatible Base URL: `https://www.aifast.club/v1`.
+- OpenAI-compatible Base URL: `https://www.aifast.hk/v1`.
 
 The catalog changes over time. Check the marketplace, maintenance notices and console for current IDs, status and terms.
 
@@ -30,7 +30,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [Codex custom provider setup](https://docs.aifast.club/tools/codex/): user-level config, Responses API, Base URL, environment key and minimum validation.
 - [Codex gateway validation and troubleshooting](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/): provider selection, tool events, context compaction, thread resume and HTTP errors.
 - [Online AI API relay model check](https://docs.aifast.club/model-check/): checks model declarations, token fields, randomized dynamic probes, SSE streaming and tool calls in the browser.
-- [AIFast catalog and console](https://www.aifast.club)
+- [AIFast catalog and console](https://www.aifast.hk)
 - [Catalog and maintenance reference](https://kkwang4444.github.io/api-status/)
 
 The online check surfaces protocol gaps, routing differences and capability anomalies. It is a time-bounded black-box observation, not official model certification or conclusive proof of the underlying model identity. Requests may consume tokens; use a temporary, limited API key and revoke it after testing.
@@ -38,7 +38,7 @@ The online check surfaces protocol gaps, routing differences and capability anom
 ## Endpoint
 
 ```text
-https://www.aifast.club/v1
+https://www.aifast.hk/v1
 ```
 
 Authenticate with a Bearer API key. `/v1/models` requires authentication. Use an exact model ID shown in the current console.

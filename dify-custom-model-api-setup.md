@@ -18,7 +18,7 @@ Dify 新版入口是 **Integrations（集成）→ Model Provider（模型供应
 |:---|:---|
 | 模型类型 | LLM（对话/补全通用） |
 | 名称 | 给这个配置起个名，比如 `aifast-gpt` |
-| Base URL | `https://www.aifast.club/v1` |
+| Base URL | `https://www.aifast.hk/v1` |
 | API Key | AI快站控制台创建的 Key |
 | 模型 | 从控制台复制精确模型 ID |
 | 上下文长度 | 按模型规格填写 |
@@ -61,7 +61,7 @@ AI快站提供 500+ 模型，覆盖以上所有能力。设置前先在控制台
 
 ```bash
 curl -s -o /dev/null -w "%{http_code}" \
-  https://www.aifast.club/v1/models \
+  https://www.aifast.hk/v1/models \
   -H "Authorization: Bearer $AIFAST_API_KEY"
 ```
 
@@ -83,7 +83,7 @@ Dify 的知识库 RAG 流程分两步：先用 Embedding 模型把文档转成�
 需要另外配置一个 Embedding 模型：
 
 - 模型类型选 **Text Embedding**；
-- Base URL 仍使用 `https://www.aifast.club/v1`；
+- Base URL 仍使用 `https://www.aifast.hk/v1`；
 - 模型 ID 必须从 AI快站当前模型目录复制。本文不写死第二个候选 ID，避免把已下架或根本不存在的型号留在教程里；
 - 配好后用一小段文本生成向量，确认返回数组、维度和 Dify 插件声明一致。
 
@@ -101,7 +101,7 @@ Dify 的具体配置由已安装的模型供应商插件保存，下面只表示
 嵌入模型：Text Embedding 类型，用于知识库向量化
 ```
 
-三个角色可以共用 `https://www.aifast.club/v1`，但模型类型、精确 ID 和能力参数要分别配置。每项都要在 Dify 中做一次真实调用，不要只看凭据验证结果。
+三个角色可以共用 `https://www.aifast.hk/v1`，但模型类型、精确 ID 和能力参数要分别配置。每项都要在 Dify 中做一次真实调用，不要只看凭据验证结果。
 
 ---
 

@@ -26,7 +26,7 @@ for document in DOCUMENTS:
 contents = {document.name: document.read_text(encoding="utf-8") for document in DOCUMENTS}
 combined = "\n".join(contents.values())
 
-check("https://www.aifast.club/v1" in combined, "missing AIFast Base URL")
+check("https://www.aifast.hk/v1" in combined, "missing AIFast Base URL")
 check(
     contents["README.md"].startswith("# AI API 中转站检测："),
     "Chinese README must retain the AI API relay testing intent",
