@@ -9,6 +9,6 @@ Thank you for considering a contribution. This repository is a first-party refer
 
 ## Before opening an issue
 
-1. Check the [documentation](https://docs.aifast.club).
+1. Check the [documentation](https://docs.aifast.hk).
 2. Search [existing issues](https://github.com/KKWANG4444/llm-api-proxy-china/issues) to avoid duplicates.
 3. Verify the model ID against the current AIFast console — catalogs change over time.

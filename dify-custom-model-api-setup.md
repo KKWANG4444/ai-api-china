@@ -122,5 +122,5 @@ Dify 的具体配置由已安装的模型供应商插件保存，下面只表示
 ## 参考
 
 - [Dify 官方文档：模型供应商](https://docs.dify.ai/en/cloud/use-dify/workspace/model-providers)
-- [AI快站模型与价格](https://docs.aifast.club/go/pricing/)
+- [AI快站模型与价格](https://docs.aifast.hk/go/pricing/)
 - [AI快站完整接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)

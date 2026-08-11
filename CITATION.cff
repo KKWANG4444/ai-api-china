@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "KKWANG4444"
 repository-code: "https://github.com/KKWANG4444/llm-api-proxy-china"
-url: "https://docs.aifast.club/model-check/"
+url: "https://docs.aifast.hk/model-check/"
 date-released: 2026-07-18
 keywords:
   - OpenAI Compatible API

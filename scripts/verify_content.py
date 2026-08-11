@@ -54,8 +54,8 @@ for document_name in ("README.md", "llms.txt"):
     )
 for absolute_claim in ("Every model supports its official API interface", "All OpenAI-compatible clients are supported"):
     check(absolute_claim not in combined, "unsupported absolute compatibility claim is still present: %s" % absolute_claim)
-check("https://docs.aifast.club/tools/codex/" in combined, "missing Codex setup entry")
-check("https://docs.aifast.club/en/payment/" in combined, "missing international payment entry")
+check("https://docs.aifast.hk/tools/codex/" in combined, "missing Codex setup entry")
+check("https://docs.aifast.hk/en/payment/" in combined, "missing international payment entry")
 check(
     all(token in contents["README.md"][:2200] for token in ("llm-hero-model-check", "llm-hero-report-guide", "401", "404", "429", "5xx")),
     "Chinese README hero must route users from model check to report interpretation and error-specific guides",
@@ -65,22 +65,22 @@ check(
     "Chinese README hero image blocks the primary model-check route",
 )
 check(
-    "https://docs.aifast.club/guides/openai-compatible-api/" in contents["README.md"]
-    and "https://docs.aifast.club/en/guides/openai-compatible-api/" in contents["README_EN.md"],
+    "https://docs.aifast.hk/guides/openai-compatible-api/" in contents["README.md"]
+    and "https://docs.aifast.hk/en/guides/openai-compatible-api/" in contents["README_EN.md"],
     "missing Chinese or English OpenAI Compatible setup entry",
 )
 check(
-    "https://docs.aifast.club/tools/cursor/" in contents["README.md"]
-    and "https://docs.aifast.club/en/tools/cursor/" in contents["README_EN.md"],
+    "https://docs.aifast.hk/tools/cursor/" in contents["README.md"]
+    and "https://docs.aifast.hk/en/tools/cursor/" in contents["README_EN.md"],
     "missing Chinese or English Cursor setup entry",
 )
 check(
-    "https://docs.aifast.club/tools/cursor2api/?utm_source=github" in contents["README.md"]
-    and "https://docs.aifast.club/troubleshooting/model-not-found/?utm_source=github" in contents["README.md"],
+    "https://docs.aifast.hk/tools/cursor2api/?utm_source=github" in contents["README.md"]
+    and "https://docs.aifast.hk/troubleshooting/model-not-found/?utm_source=github" in contents["README.md"],
     "missing Cursor2API or model-not-found high-intent deep link",
 )
 check(
-    "https://docs.aifast.club/troubleshooting/codex-gateway-checklist/" in combined,
+    "https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/" in combined,
     "missing Codex troubleshooting entry",
 )
 check("https://example.com/v1" not in combined, "placeholder Base URL is still present")

@@ -119,5 +119,5 @@ curl -sS -o /dev/null -w "%{http_code}\n" \
 ## 参考
 
 - [Cursor API Key 官方文档](https://docs.cursor.com/settings/api-keys)
-- [AI快站模型与价格](https://docs.aifast.club/go/pricing/)
+- [AI快站模型与价格](https://docs.aifast.hk/go/pricing/)
 - [AI快站完整接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)

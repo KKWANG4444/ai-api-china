@@ -34,7 +34,7 @@
 
 选中转站最担心的是模型被降级或偷换。AI快站提供网页检测工具，工具本身免费；检测会向被测中转站发送少量请求，可能按对方计费规则产生 Token 费用：
 
-**[👉 进入模型检测 →](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-cn)**
+**[👉 进入模型检测 →](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-cn)**
 
 可检测：
 - 模型声明是否一致
@@ -103,9 +103,9 @@ API Key 由用户自行保管，每次请求用于鉴权；有进一步的安全
 
 ## 相关资源
 
-- [👉 进入在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-cn-footer)
+- [👉 进入在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=about-cn-footer)
 - [模型广场与费用](https://www.aifast.hk)
-- [文档站](https://docs.aifast.club)
+- [文档站](https://docs.aifast.hk)
 - [GitHub 仓库：LLM API Proxy China](README.md)
 - [GitHub 仓库：AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
 - [GitHub 仓库：GitHub Pages 状态站](https://github.com/KKWANG4444/api-status)

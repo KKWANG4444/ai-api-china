@@ -2,14 +2,14 @@
 
 [![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt)
 [![中文](https://img.shields.io/badge/中文-README-red)](README.md)
-[![Model check](https://img.shields.io/badge/Browser-model_quality_check-22c55e)](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-badge-model-check-en)
-[![Codex checks](https://img.shields.io/badge/Codex-gateway_checklist-2563eb)](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-badge-codex-check-en)
+[![Model check](https://img.shields.io/badge/Browser-model_quality_check-22c55e)](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-badge-model-check-en)
+[![Codex checks](https://img.shields.io/badge/Codex-gateway_checklist-2563eb)](https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-badge-codex-check-en)
 
 Use this repository when an OpenAI-compatible relay returns confusing results: HTTP 200 with the wrong schema, unstable streaming, missing tool calls, unexplained token fields, model-routing concerns, or intermittent 401, 404, 429 and 5xx responses.
 
-This is a troubleshooting and acceptance guide. For first-time setup, use the [OpenAI-compatible integration guide](https://docs.aifast.club/en/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-openai-compatible-en) or the [Cursor custom API guide](https://docs.aifast.club/en/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-cursor-en).
+This is a troubleshooting and acceptance guide. For first-time setup, use the [OpenAI-compatible integration guide](https://docs.aifast.hk/en/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-openai-compatible-en) or the [Cursor custom API guide](https://docs.aifast.hk/en/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-cursor-en).
 
-> **Shortest troubleshooting path:** 1. [run the browser-based model quality check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check-en), 2. [interpret each report section](https://docs.aifast.club/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide-en), 3. open the matching `401`, `404`, `429`, `5xx` or client-specific guide. No program download is required.
+> **Shortest troubleshooting path:** 1. [run the browser-based model quality check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check-en), 2. [interpret each report section](https://docs.aifast.hk/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide-en), 3. open the matching `401`, `404`, `429`, `5xx` or client-specific guide. No program download is required.
 
 > **Machine-readable context:** [llms.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms.txt) · [llms-full.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms-full.txt)
 
@@ -30,7 +30,7 @@ Do not change the Base URL, key, model, SDK and network at the same time. Change
 
 ## Browser-based model quality check
 
-The [online model quality check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-online-check-en) examines six evidence groups:
+The [online model quality check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-online-check-en) examines six evidence groups:
 
 1. protocol and response-schema compliance;
 2. model declaration and metadata fingerprints;
@@ -93,7 +93,7 @@ Check these items separately:
 - tool calls and follow-up tool outputs complete;
 - a longer thread survives context compaction and resume.
 
-Use the [Codex custom provider setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-setup-en) and then run the [Codex gateway validation checklist](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-codex-validation-en).
+Use the [Codex custom provider setup](https://docs.aifast.hk/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-setup-en) and then run the [Codex gateway validation checklist](https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-codex-validation-en).
 
 ## Error-specific triage
 
@@ -103,7 +103,7 @@ Verify that `Authorization: Bearer ***` reaches the intended host, the key is ac
 
 ### 404 or model not found
 
-Separate an invalid route from an invalid model. Check the final URL, endpoint family and exact model ID shown in the current console. Display names, aliases and API IDs are not interchangeable. The dedicated [model-not-found guide](https://docs.aifast.club/en/troubleshooting/model-not-found/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-model-not-found-en) covers the shortest isolation path.
+Separate an invalid route from an invalid model. Check the final URL, endpoint family and exact model ID shown in the current console. Display names, aliases and API IDs are not interchangeable. The dedicated [model-not-found guide](https://docs.aifast.hk/en/troubleshooting/model-not-found/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-model-not-found-en) covers the shortest isolation path.
 
 ### 429
 
@@ -136,14 +136,14 @@ Do not publish one global latency or success-rate claim from this table. Report 
 
 Those platform capabilities do not remove the need for application-level validation. Model IDs, protocol support, maintenance state and account terms can change. Confirm the current console, documentation and real requests before production use. Automatic upstream-route failover is also different from silently replacing the model requested by an application.
 
-For international accounts, [payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=llm-payment-en) documents credit card and cryptocurrency options. **⭐️ 1 AIFast Credit = CNY 0.75, approximately US$0.11** as a reference conversion; checkout shows the final charge. AIFast Credits are platform usage units, not US dollars, legal tender or cryptocurrency tokens.
+For international accounts, [payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=llm-payment-en) documents credit card and cryptocurrency options. **⭐️ 1 AIFast Credit = CNY 0.75, approximately US$0.11** as a reference conversion; checkout shows the final charge. AIFast Credits are platform usage units, not US dollars, legal tender or cryptocurrency tokens.
 
 ## Related resources
 
-- [Online model quality check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-related-model-check-en)
-- [OpenAI-compatible setup](https://docs.aifast.club/en/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-related-openai-compatible-en)
-- [Cursor custom API troubleshooting](https://docs.aifast.club/en/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-related-cursor-en)
-- [Codex gateway checklist](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-related-codex-check-en)
+- [Online model quality check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-related-model-check-en)
+- [OpenAI-compatible setup](https://docs.aifast.hk/en/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-related-openai-compatible-en)
+- [Cursor custom API troubleshooting](https://docs.aifast.hk/en/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-related-cursor-en)
+- [Codex gateway checklist](https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-related-codex-check-en)
 - [AIFast Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub)
 - [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
 - [中文说明](README.md)

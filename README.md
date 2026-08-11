@@ -1,28 +1,28 @@
 # AI API 中转站检测：模型质量、协议兼容与生产排错
 
 [![English](https://img.shields.io/badge/English-README_EN-blue)](README_EN.md)
-[![模型选择](https://img.shields.io/badge/模型-选择与成本-FF6B35)](https://docs.aifast.club/models/model-selection/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-model-selection)
+[![模型选择](https://img.shields.io/badge/模型-选择与成本-FF6B35)](https://docs.aifast.hk/models/model-selection/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-model-selection)
 [![网站介绍](https://img.shields.io/badge/网站-AI快站介绍-blueviolet)](ABOUT.md)
-[![接入参考](https://img.shields.io/badge/接入-OpenAI_compatible-blue)](https://docs.aifast.club/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-openai-compatible)
-[![Codex](https://img.shields.io/badge/Codex-配置与排错-22c55e)](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-codex)
+[![接入参考](https://img.shields.io/badge/接入-OpenAI_compatible-blue)](https://docs.aifast.hk/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-openai-compatible)
+[![Codex](https://img.shields.io/badge/Codex-配置与排错-22c55e)](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-badge-codex)
 [![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt)
 
 **机器可读上下文：** [llms.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms.txt) · [llms-full.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms-full.txt)
 
-> **最短排错路径：** ① [在线检测现有接口](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check) ② [读懂分项报告](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide) ③ 按 `401`、`404`、`429`、`5xx` 或客户端问题进入对应教程。无需下载程序。
+> **最短排错路径：** ① [在线检测现有接口](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check) ② [读懂分项报告](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide) ③ 按 `401`、`404`、`429`、`5xx` 或客户端问题进入对应教程。无需下载程序。
 
 这是面向任意 AI API 中转站的模型质量检测与生产排错指南。适用于 OpenAI API 中转、Claude API 中转、Gemini API 中转和其他 OpenAI-compatible 接口，重点检查模型声明、Token 字段、SSE、工具调用、Base URL 与路由异常，而不是重复另一份通用接入教程。
 
 需要从零配置国内 AI API 中转站时，请使用[接入与迁移主指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)；已经有 Base URL、API Key 和模型 ID，需要判断接口是否可用、是否兼容或是否出现降智与套壳疑问时，从本仓库的在线检测流程开始。
 
-需要定位客户端特有问题时，可继续查看 [Cursor 自定义 API](https://docs.aifast.club/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-troubleshooting-cursor)、[Cursor2API 风险与迁移](https://docs.aifast.club/tools/cursor2api/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-troubleshooting-cursor2api)和 [model not found、`/v1/v1` 排错](https://docs.aifast.club/troubleshooting/model-not-found/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-troubleshooting-model-not-found)。
+需要定位客户端特有问题时，可继续查看 [Cursor 自定义 API](https://docs.aifast.hk/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-troubleshooting-cursor)、[Cursor2API 风险与迁移](https://docs.aifast.hk/tools/cursor2api/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-troubleshooting-cursor2api)和 [model not found、`/v1/v1` 排错](https://docs.aifast.hk/troubleshooting/model-not-found/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-troubleshooting-model-not-found)。
 
 | 当前问题 | 最短路径 | 验收结果 |
 |:---|:---|:---|
-| 怀疑模型降智、套壳或协议缺失 | [运行在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-decision-model-check) | 获得可复制的分项检测报告 |
-| 地址填写后出现 404 或 `/v1/v1` | [运行 Base URL 检查](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-decision-base-url) | 确认最终请求路径 |
-| 需要比较模型、成本和能力类型 | [查看模型与价格](https://docs.aifast.club/go/pricing/?source=github&placement=llm-decision-pricing) | 以当前目录核对真实模型 ID |
-| 已准备接入 AI快站 | [注册测试账号](https://docs.aifast.club/go/register/?source=github&placement=llm-decision-register) | 创建独立 Key 并完成最小请求 |
+| 怀疑模型降智、套壳或协议缺失 | [运行在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-decision-model-check) | 获得可复制的分项检测报告 |
+| 地址填写后出现 404 或 `/v1/v1` | [运行 Base URL 检查](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-decision-base-url) | 确认最终请求路径 |
+| 需要比较模型、成本和能力类型 | [查看模型与价格](https://docs.aifast.hk/go/pricing/?source=github&placement=llm-decision-pricing) | 以当前目录核对真实模型 ID |
+| 已准备接入 AI快站 | [注册测试账号](https://docs.aifast.hk/go/register/?source=github&placement=llm-decision-register) | 创建独立 Key 并完成最小请求 |
 
 <p align="center"><img src="assets/social-preview.png" width="100%" alt="AI API 统一接入、模型检测、错误排查与生产检查"></p>
 
@@ -34,7 +34,7 @@ AI快站提供500+模型并支持自动故障切换。性能观察应注明时�
 
 担心模型降智、套壳，或者流式输出和工具调用不兼容，可以直接使用网页检测，无需下载安装：
 
-**[进入大模型 API 中转站检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-api-proxy-china)**
+**[进入大模型 API 中转站检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-api-proxy-china)**
 
 检测会检查模型声明、Token 字段、随机动态题、SSE 流式输出和工具调用。报告用于发现协议缺失、路由差异或能力异常；一次黑盒检测不能单独证明底层模型身份。
 
@@ -42,7 +42,7 @@ AI快站提供500+模型并支持自动故障切换。性能观察应注明时�
 
 Codex 自定义模型提供商使用 Responses API。接入时需要核对用户级 `~/.codex/config.toml`、`model_provider`、`base_url`、`env_key`、模型 ID 和 `wire_api = "responses"`；普通 Chat Completions 请求成功，不能证明 Codex 的流式事件、工具调用、文件回写、上下文压缩和会话恢复都可用。
 
-先按 [Codex 接入 OpenAI Compatible API 配置教程](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-section-setup)完成最小配置，再使用 [Codex 中转 API 验收与排错清单](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-section-troubleshooting)逐项检查 401、404、429、5xx、Responses 路径和 Agent 事件。配置字段和能力边界以当前 Codex 官方文档、目标接口说明及真实请求为准。
+先按 [Codex 接入 OpenAI Compatible API 配置教程](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-section-setup)完成最小配置，再使用 [Codex 中转 API 验收与排错清单](https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-codex-section-troubleshooting)逐项检查 401、404、429、5xx、Responses 路径和 Agent 事件。配置字段和能力边界以当前 Codex 官方文档、目标接口说明及真实请求为准。
 
 ## AI快站平台能力
 
@@ -149,7 +149,7 @@ MODEL_GROUPS = {
 
 检查 Bearer Key 是否完整、是否启用，以及账户状态。
 
-完整步骤：[401 invalid_api_key 与 API Key 无效排查](https://docs.aifast.club/troubleshooting/401-invalid-api-key/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-401)
+完整步骤：[401 invalid_api_key 与 API Key 无效排查](https://docs.aifast.hk/troubleshooting/401-invalid-api-key/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-401)
 
 ### 404 / model not found
 
@@ -159,13 +159,13 @@ MODEL_GROUPS = {
 
 使用指数退避并加入随机抖动，不要立即死循环重试。
 
-完整步骤：[429 Too Many Requests、限流与重试排查](https://docs.aifast.club/troubleshooting/429-rate-limit/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-429)
+完整步骤：[429 Too Many Requests、限流与重试排查](https://docs.aifast.hk/troubleshooting/429-rate-limit/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-429)
 
 ### 5xx 或超时
 
 只重试可安全重复的请求，限制重试次数，并保留原始错误。
 
-完整步骤：[502 Bad Gateway、stream disconnected 与 SSE 断流排查](https://docs.aifast.club/troubleshooting/502-stream-disconnected/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-502)
+完整步骤：[502 Bad Gateway、stream disconnected 与 SSE 断流排查](https://docs.aifast.hk/troubleshooting/502-stream-disconnected/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-error-502)
 
 ## 选哪类接口
 
@@ -193,8 +193,8 @@ AI快站的500+模型覆盖以上能力。具体端点、模型 ID 与维护状�
 
 ## 相关入口
 
-- [AI快站模型与价格](https://docs.aifast.club/go/pricing/?source=github&placement=llm-related-pricing)
-- [注册并创建测试 Key](https://docs.aifast.club/go/register/?source=github&placement=llm-related-register)
+- [AI快站模型与价格](https://docs.aifast.hk/go/pricing/?source=github&placement=llm-related-pricing)
+- [注册并创建测试 Key](https://docs.aifast.hk/go/register/?source=github&placement=llm-related-register)
 - [详细工具接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
 - [Cursor 接入自定义 API 完整配置流程](cursor-custom-api-setup.md)
 - [Dify 接入第三方 API 模型配置指南](dify-custom-model-api-setup.md)
