@@ -67,10 +67,9 @@ Compatible with Cursor, Dify, Claude Code, Open WebUI, Chatbox, LobeChat, Cherry
 
 ## Payment
 
-- **Domestic (China)** — the RMB base conversion is ⭐️ 1 AIFast Credit = CNY 0.75. Common recharge tiers are ⭐️ 100 Credits at 99%, ⭐️ 500 Credits at 98.5%, and ⭐️ 1,000 Credits at 98% of the base amount. Check the console for current methods, discounts and final settlement.
-- **International** — credit card or cryptocurrency. For cards, ⭐️ 1 AIFast Credit equals CNY 0.75, approximately US$0.11 using the ECB reference rate published on 2026-07-17. For cryptocurrency, ⭐️ 1 AIFast Credit equals 0.07 USDC or 0.07 USDT.
+The new site funds accounts in USD and credits balances 1:1: **⭐️ 1 AIFast Credit = US$1**. Supported methods, discounts, network instructions and final charges are shown in the console and checkout page.
 
-AIFast Credits (⭐️) are platform usage units shown for account balance and model pricing, not US dollars, legal tender or cryptocurrency tokens. Final card charges depend on the checkout exchange rate, payment processor and card issuer fees. Verify supported chains before cryptocurrency payment. Current console charges are not official model prices and may change with provider pricing and platform adjustments. [ECB reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+AIFast Credits (⭐️) are platform usage units, not a separate currency or cryptocurrency token. Card processors or issuers may apply fees. Verify the currency, token, network, address and crediting rules before using another payment method. Current console charges are not official model prices and may change with provider pricing and platform adjustments.
 
 ---
 

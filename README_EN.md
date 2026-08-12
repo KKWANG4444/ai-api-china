@@ -136,7 +136,7 @@ Do not publish one global latency or success-rate claim from this table. Report 
 
 Those platform capabilities do not remove the need for application-level validation. Model IDs, protocol support, maintenance state and account terms can change. Confirm the current console, documentation and real requests before production use. Automatic upstream-route failover is also different from silently replacing the model requested by an application.
 
-For international accounts, [payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=llm-payment-en) documents credit card and cryptocurrency options. **⭐️ 1 AIFast Credit = CNY 0.75, approximately US$0.11** as a reference conversion; checkout shows the final charge. AIFast Credits are platform usage units, not US dollars, legal tender or cryptocurrency tokens.
+For the new site, [payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=llm-payment-en) documents the current options. Accounts are funded in USD and credited 1:1: **⭐️ 1 AIFast Credit = US$1**. Supported methods, discounts, network instructions and final charges are shown in the console and checkout page.
 
 ## Related resources
 

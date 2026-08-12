@@ -105,19 +105,18 @@ for duplicated_setup_section in (
         "English troubleshooting README regressed into a general setup guide: %s" % duplicated_setup_section,
     )
 for expected in (
-    "⭐️ 1 AIFast Credit = 0.75元",
-    "⭐️ 100 Credits 享9.90折",
-    "⭐️ 500 Credits 享9.85折",
-    "⭐️ 1000 Credits 享9.80折",
-    "⭐️ 1 AIFast Credit = CNY 0.75",
-    "approximately US$0.11",
-    "credit card or cryptocurrency",
+    "⭐️ 1 AIFast Credit = US$1",
+    "funded in USD",
+    "credited 1:1",
+    "console and checkout page",
 ):
-    check(expected in combined, "missing domestic recharge fact: %s" % expected)
+    check(expected in combined, "missing new-site funding fact: %s" % expected)
 for document_name in ("README_EN.md", "ABOUT_EN.md", "llms.txt", "llms-full.txt"):
-    check("CNY 0.75" in contents[document_name], "%s is missing the domestic CNY conversion" % document_name)
+    check("US$1" in contents[document_name], "%s is missing the USD 1:1 funding rule" % document_name)
 for document_name in ("README.md", "ABOUT.md"):
-    check("⭐️ 1 AIFast Credit = 0.75元" in contents[document_name], "%s is missing the domestic RMB conversion" % document_name)
+    check("⭐️ 1 AIFast Credit = US$1" in contents[document_name], "%s is missing the USD 1:1 funding rule" % document_name)
+for stale_payment_term in ("0.75元", "CNY 0.75", "US$0.11", "0.07 USDC", "0.07 USDT", "9.90折", "9.85折", "9.80折"):
+    check(stale_payment_term not in combined, "stale payment rule is still present: %s" % stale_payment_term)
 for stale_credit_term in ("AIFast balance unit", "1 balance unit", "1刀", "100刀", "500刀", "1000刀", "◈"):
     check(stale_credit_term not in combined, "stale AIFast Credit term is still present: %s" % stale_credit_term)
 for forbidden_amount in ("74.25", "369.38", "735.00"):
@@ -129,6 +128,8 @@ for stale_payment_claim in (
     "仅支持加密货币充值",
 ):
     check(stale_payment_claim not in combined, "stale international payment claim is still present: %s" % stale_payment_claim)
+for stale_domain in ("www.aifast.club", "docs.aifast.club"):
+    check(stale_domain not in combined, "stale AIFast domain is still present: %s" % stale_domain)
 
 wrong_campaign_paths = (
     "/start/",
@@ -140,7 +141,7 @@ wrong_campaign_paths = (
 
 for name in ("README.md", "README_EN.md"):
     source = contents[name]
-    for url in re.findall(r"https://docs\.aifast\.club/[^)\s]+", source):
+    for url in re.findall(r"https://docs\.aifast\.hk/[^)\s]+", source):
         parsed = urlsplit(url)
         campaign = parse_qs(parsed.query).get("utm_campaign", [""])[0]
         if parsed.path in wrong_campaign_paths and campaign == "model-check":
