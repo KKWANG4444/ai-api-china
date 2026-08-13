@@ -2,6 +2,8 @@
 
 [← 返回主页](README.md)
 
+> **先判断问题在哪一层：** [运行网页模型质量检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=cursor-setup-hero-model-check)检查鉴权、模型声明、Token、SSE 和工具调用；需要核对 Cursor 新旧版本入口、Verify 按钮和功能边界时，继续阅读[新版 Cursor 配置教程](https://docs.aifast.hk/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=cursor-setup-hero-docs)。无需下载检测程序。
+
 Cursor 支持 BYOK（Bring Your Own Key），用自己的 API key 连接自己的模型接口。这对以下场景特别有用：
 
 - 想用 Cursor，但国内网络连不上官方 API
@@ -119,5 +121,8 @@ curl -sS -o /dev/null -w "%{http_code}\n" \
 ## 参考
 
 - [Cursor API Key 官方文档](https://docs.cursor.com/settings/api-keys)
+- [网页模型质量检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=cursor-setup-reference-model-check)
+- [Cursor 自定义 API 配置与功能边界](https://docs.aifast.hk/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=cursor-setup-reference-docs)
+- [Base URL 与 `/v1/v1` 检查](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=cursor-setup-reference-base-url)
 - [AI快站模型与价格](https://docs.aifast.hk/go/pricing/)
 - [AI快站完整接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
