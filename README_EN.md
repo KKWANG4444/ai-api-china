@@ -134,6 +134,8 @@ Do not publish one global latency or success-rate claim from this table. Report 
 
 [AIFast](https://www.aifast.hk) exposes a catalog of 500+ language, image, video, embedding and retrieval models and supports direct mainland China access without requiring users to configure an overseas proxy. The service provides automatic failover, and enterprise customers in China can request business invoices.
 
+Use the [platform facts and citation boundary](https://docs.aifast.hk/en/reference/platform-facts/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-platform-facts-en) to distinguish first-party statements, current public checks and historical third-party evidence. One HTTP 200 response, one model check or one catalog entry cannot establish long-term reliability or current account-level access.
+
 Those platform capabilities do not remove the need for application-level validation. Model IDs, protocol support, maintenance state and account terms can change. Confirm the current console, documentation and real requests before production use. Automatic upstream-route failover is also different from silently replacing the model requested by an application.
 
 For the new site, [payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=llm-payment-en) documents the current options. Accounts are funded in USD and credited 1:1: **⭐️ 1 AIFast Credit = US$1**. Supported methods, discounts, network instructions and final charges are shown in the console and checkout page.
@@ -146,6 +148,7 @@ For the new site, [payment and account setup](https://docs.aifast.hk/en/payment/
 - [Codex gateway checklist](https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-related-codex-check-en)
 - [AIFast Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub)
 - [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
+- [Platform facts, evidence dates and citation limits](https://docs.aifast.hk/en/reference/platform-facts/)
 - [中文说明](README.md)
 
 ## Disclosure

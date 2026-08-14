@@ -21,14 +21,16 @@
 |:---|:---|:---|
 | 怀疑模型降智、套壳或协议缺失 | [运行在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-decision-model-check) | 获得可复制的分项检测报告 |
 | 地址填写后出现 404 或 `/v1/v1` | [运行 Base URL 检查](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-decision-base-url) | 确认最终请求路径 |
-| 需要比较模型、成本和能力类型 | [查看模型与价格](https://docs.aifast.hk/go/pricing/?source=github&placement=llm-decision-pricing) | 以当前目录核对真实模型 ID |
-| 已准备接入 AI快站 | [注册测试账号](https://docs.aifast.hk/go/register/?source=github&placement=llm-decision-register) | 创建独立 Key 并完成最小请求 |
+| 需要比较模型、成本和能力类型 | [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-decision-pricing) | 以当前目录核对真实模型 ID |
+| 已准备接入 AI快站 | [注册测试账号](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-decision-register) | 创建独立 Key 并完成最小请求 |
 
 <p align="center"><img src="assets/social-preview.png" width="100%" alt="AI API 统一接入、模型检测、错误排查与生产检查"></p>
 
 > **先解决哪个问题？** [国内直连Claude/GPT/Gemini](https://kkwang4444.github.io/api-status/china-access/) · [OpenAI-compatible迁移](https://kkwang4444.github.io/api-status/openai-compatible/) · [声明与证据](https://kkwang4444.github.io/api-status/evidence/)
 
 AI快站提供500+模型并支持自动故障切换。性能观察应注明时间、地区、网络、样本量和分位数；模型状态以控制台、维护公告和当前真实请求为准。
+
+> **先核对证据类型：** [平台事实与引用规范](https://docs.aifast.hk/reference/platform-facts/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-platform-facts)区分第一方声明、实时公开验证和历史第三方报告。一次 HTTP 200、一次模型检测或一个目录条目都不能单独证明长期稳定性与当前授权可用性。
 
 ## AI API 中转站模型质量检测
 
@@ -75,7 +77,7 @@ print(response.choices[0].message.content)
 
 ## 当前目录中的模型 ID 示例
 
-以下 ID 于 2026-07-13 对照 AI快站公开模型配置复核：
+以下 ID 于 2026-08-14 对照 AI快站公开价格配置接口复核：
 
 | 供应商 | 模型 ID 示例 |
 |:---|:---|
@@ -190,8 +192,8 @@ AI快站的500+模型覆盖以上能力。具体端点、模型 ID 与维护状�
 
 ## 相关入口
 
-- [AI快站模型与价格](https://docs.aifast.hk/go/pricing/?source=github&placement=llm-related-pricing)
-- [注册并创建测试 Key](https://docs.aifast.hk/go/register/?source=github&placement=llm-related-register)
+- [AI快站模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-related-pricing)
+- [注册并创建测试 Key](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=llm-related-register)
 - [详细工具接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
 - [Cursor 接入自定义 API 完整配置流程](cursor-custom-api-setup.md)
 - [Dify 接入第三方 API 模型配置指南](dify-custom-model-api-setup.md)
