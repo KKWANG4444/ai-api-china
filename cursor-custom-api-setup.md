@@ -124,5 +124,5 @@ curl -sS -o /dev/null -w "%{http_code}\n" \
 - [网页模型质量检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=cursor-setup-reference-model-check)
 - [Cursor 自定义 API 配置与功能边界](https://docs.aifast.hk/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=cursor-setup-reference-docs)
 - [Base URL 与 `/v1/v1` 检查](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=cursor-setup-reference-base-url)
-- [AI快站模型与价格](https://docs.aifast.hk/go/pricing/)
+- [AI快站模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=cursor-setup-reference-pricing)
 - [AI快站完整接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
