@@ -77,15 +77,15 @@ print(response.choices[0].message.content)
 
 ## 当前目录中的模型 ID 示例
 
-以下 ID 于 2026-08-14 对照 AI快站公开价格配置接口复核：
+以下 ID 于 2026-08-18 对照 AI快站模型广场复核：
 
 | 供应商 | 模型 ID 示例 |
 |:---|:---|
 | OpenAI | `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
 | Anthropic | `claude-sonnet-5`、`claude-opus-4-8` |
-| xAI | `grok-4.5`、`grok-4-20-reasoning` |
+| xAI | `grok-4.6`、`grok-4.5`、`grok-4-20-reasoning` |
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
-| Google | `gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| Google | `gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | 阿里 | `qwen3.7-max`、`qwen3.7-plus` |
 | 智谱 | `glm-5.2` |
 | 月之暗面 | `kimi-k2.7-code` |
@@ -136,7 +136,7 @@ AI快站的自动故障切换用于处理上游线路或节点异常，不等于
 ```python
 MODEL_GROUPS = {
     "reasoning": ["claude-opus-4-8", "gpt-5.6-terra"],
-    "fast_text": ["gpt-5.6-luna", "deepseek-v4-flash", "gemini-3.5-flash"],
+    "fast_text": ["gemini-3.7-flash", "gpt-5.6-luna", "deepseek-v4-flash"],
 }
 ```
 

@@ -71,4 +71,4 @@ The new site funds accounts in USD and credits balances 1:1: ⭐️ 1 AIFast Cre
 
 Supported payment methods, discounts, network instructions and final charges are shown in the console and checkout page. AIFast Credits (⭐️) are platform usage units, not a separate currency or cryptocurrency token. Card processors or issuers may apply fees.
 
-Last reviewed: 2026-08-14.
+Last reviewed: 2026-08-18.
