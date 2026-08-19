@@ -77,7 +77,7 @@ print(response.choices[0].message.content)
 
 ## 当前目录中的模型 ID 示例
 
-以下 ID 于 2026-08-18 对照 AI快站模型广场复核：
+以下 ID 于 2026-08-19 对照 AI快站模型广场与上架公告复核：
 
 | 供应商 | 模型 ID 示例 |
 |:---|:---|
@@ -87,7 +87,7 @@ print(response.choices[0].message.content)
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
 | Google | `gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | 阿里 | `qwen3.7-max`、`qwen3.7-plus` |
-| 智谱 | `glm-5.2` |
+| 智谱 | `glm-5.3`、`glm-5.2` |
 | 月之暗面 | `kimi-k2.7-code` |
 
 这里只列样例。AI快站当前提供500+模型，但不把某次抓取到的精确条目数长期写死；维护中或临时下线的模型不能写成“当前可用”。

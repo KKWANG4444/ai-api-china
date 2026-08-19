@@ -44,14 +44,14 @@ https://www.aifast.hk/v1
 
 Authenticate with a Bearer API key. `/v1/models` requires authentication. Use an exact model ID shown in the current console.
 
-## Catalog examples checked on 2026-08-18
+## Catalog examples checked on 2026-08-19
 
 - `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
 - `claude-sonnet-5`, `claude-opus-4-8`
 - `grok-4.6`, `grok-4.5`, `grok-4-20-reasoning`
 - `deepseek-v4-pro`, `deepseek-v4-flash`
 - `gemini-3.7-flash`, `gemini-3.5-flash`, `gemini-3.1-pro-preview`
-- `qwen3.7-max`, `glm-5.2`, `kimi-k2.7-code`
+- `qwen3.7-max`, `glm-5.3`, `glm-5.2`, `kimi-k2.7-code`
 
 A catalog entry is not an availability guarantee.
 
