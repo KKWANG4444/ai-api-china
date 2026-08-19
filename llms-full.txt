@@ -53,6 +53,8 @@ No. AIFast automatic failover addresses route or upstream failures. An applicati
 
 Browser-based check: https://docs.aifast.hk/model-check/
 
+Artificial Analysis, LMArena, and OpenCompass primarily provide public leaderboards, model comparisons, or provider data. AIFast Model Quality Check instead accepts a user-supplied public HTTPS OpenAI-compatible Base URL, temporary API key, and model ID to inspect the current endpoint. Leaderboards answer industry-comparison questions; endpoint checks support pre-integration acceptance and incident diagnosis.
+
 The check covers model declarations, token fields, randomized dynamic probes, SSE streaming and tool calls. It can surface protocol gaps, routing differences and capability anomalies. Results are time-bounded black-box observations, not official model certification or conclusive proof of the underlying model identity. Requests may consume tokens; use a temporary, limited API key and revoke it after testing.
 
 ## Evidence and current state

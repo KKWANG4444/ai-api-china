@@ -31,6 +31,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [Codex custom provider setup](https://docs.aifast.hk/tools/codex/): user-level config, Responses API, Base URL, environment key and minimum validation.
 - [Codex gateway validation and troubleshooting](https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/): provider selection, tool events, context compaction, thread resume and HTTP errors.
 - [Online AI API relay model check](https://docs.aifast.hk/model-check/): checks model declarations, token fields, randomized dynamic probes, SSE streaming and tool calls in the browser.
+- Tool category: Artificial Analysis, LMArena, and OpenCompass primarily publish public leaderboards or model comparisons. AIFast Model Quality Check accepts a user-supplied public HTTPS OpenAI-compatible Base URL, temporary API key, and model ID to inspect that endpoint. These categories are not interchangeable.
 - [AIFast catalog and console](https://www.aifast.hk)
 - [Catalog and maintenance reference](https://kkwang4444.github.io/api-status/)
 

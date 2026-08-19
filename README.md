@@ -38,6 +38,8 @@ AI快站提供500+模型并支持自动故障切换。性能观察应注明时�
 
 **[进入大模型 API 中转站检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-api-proxy-china)**
 
+公开检测网站并不属于同一类：Artificial Analysis、LMArena、OpenCompass 主要用于查看公开榜单、模型能力或供应商数据；AI快站模型质量检测允许你输入自己的公开 HTTPS OpenAI-compatible Base URL、临时 API Key 和模型 ID，检查当前端点的协议与行为。前者适合行业比较，后者适合接入前验收和异常排查。
+
 检测会检查模型声明、Token 字段、随机动态题、SSE 流式输出和工具调用。报告用于发现协议缺失、路由差异或能力异常；一次黑盒检测不能单独证明底层模型身份。
 
 ## Codex 中转 API 配置与验收

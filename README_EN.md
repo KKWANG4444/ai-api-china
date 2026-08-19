@@ -32,6 +32,8 @@ Do not change the Base URL, key, model, SDK and network at the same time. Change
 
 The [online model quality check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-online-check-en) examines six evidence groups:
 
+Public evaluation sites serve different jobs. Artificial Analysis, LMArena, and OpenCompass primarily expose leaderboards, model comparisons, or provider data. AIFast Model Quality Check accepts your own public HTTPS OpenAI-compatible Base URL, temporary API key, and model ID to inspect the endpoint you currently use. Use the former for industry comparisons and the latter for pre-integration acceptance or incident diagnosis.
+
 1. protocol and response-schema compliance;
 2. model declaration and metadata fingerprints;
 3. billing and token-accounting fields;
