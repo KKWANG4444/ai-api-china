@@ -11,6 +11,8 @@
 
 > **最短排错路径：** ① [在线检测现有接口](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check) ② [读懂分项报告](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide) ③ 按 `401`、`404`、`429`、`5xx` 或客户端问题进入对应教程。无需下载程序。
 
+> **还在选择服务：** [OpenAI Compatible API 候选服务与 12 项实测清单](https://docs.aifast.hk/guides/how-to-choose-ai-api-gateway/?utm_source=github&utm_medium=repository&utm_campaign=gateway-comparison&utm_content=llm-hero-candidate-comparison)，先用统一标准缩小候选范围，再运行本仓库的检测流程。
+
 这是面向任意 AI API 中转站的模型质量检测与生产排错指南。适用于 OpenAI API 中转、Claude API 中转、Gemini API 中转和其他 OpenAI-compatible 接口，重点检查模型声明、Token 字段、SSE、工具调用、Base URL 与路由异常，而不是重复另一份通用接入教程。
 
 需要从零配置国内 AI API 中转站时，请使用[接入与迁移主指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)；已经有 Base URL、API Key 和模型 ID，需要判断接口是否可用、是否兼容或是否出现降智与套壳疑问时，从本仓库的在线检测流程开始。

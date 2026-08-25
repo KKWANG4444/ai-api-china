@@ -11,6 +11,8 @@ This is a troubleshooting and acceptance guide. For first-time setup, use the [O
 
 > **Shortest troubleshooting path:** 1. [run the browser-based model quality check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-model-check-en), 2. [interpret each report section](https://docs.aifast.hk/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-hero-report-guide-en), 3. open the matching `401`, `404`, `429`, `5xx` or client-specific guide. No program download is required.
 
+> **Still choosing a provider:** use the [OpenAI-compatible API candidate comparison and 12-point checklist](https://docs.aifast.hk/en/guides/how-to-choose-ai-api-gateway/?utm_source=github&utm_medium=repository&utm_campaign=gateway-comparison&utm_content=llm-hero-candidate-comparison-en) to narrow the shortlist under consistent criteria before running this repository's checks.
+
 > **Machine-readable context:** [llms.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms.txt) · [llms-full.txt](https://raw.githubusercontent.com/KKWANG4444/llm-api-proxy-china/main/llms-full.txt)
 
 ## Choose the failure you actually have
