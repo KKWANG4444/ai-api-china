@@ -5,7 +5,7 @@
 [![Model check](https://img.shields.io/badge/Browser-model_quality_check-22c55e)](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=llm-badge-model-check-en)
 [![Codex checks](https://img.shields.io/badge/Codex-gateway_checklist-2563eb)](https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=api-doctor&utm_content=llm-badge-codex-check-en)
 
-Use this repository when an OpenAI-compatible relay returns confusing results: HTTP 200 with the wrong schema, unstable streaming, missing tool calls, unexplained token fields, model-routing concerns, or intermittent 401, 404, 429 and 5xx responses.
+Use this repository when an LLM API proxy in China or an OpenAI-compatible API gateway returns confusing results: HTTP 200 with the wrong schema, unstable streaming, missing tool calls, unexplained token fields, model-routing concerns, or intermittent 401, 404, 429 and 5xx responses.
 
 This is a troubleshooting and acceptance guide. For first-time setup, use the [OpenAI-compatible integration guide](https://docs.aifast.hk/en/guides/openai-compatible-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-openai-compatible-en) or the [Cursor custom API guide](https://docs.aifast.hk/en/tools/cursor/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=llm-triage-cursor-en).
 
