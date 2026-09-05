@@ -32,7 +32,7 @@ Cursor → Settings → Models → API Keys → OpenAI / Anthropic
 |:---|:---|
 | API Key | 控制台创建的 Key |
 | Override Base URL | `https://www.aifast.hk/v1` |
-| Model | 控制台当前展示的精确 ID（如 `gpt-5.6-luna`） |
+| Model | 控制台当前展示的精确 ID（如 `gpt-6-astra`（复杂推理与编程）或 `gpt-6-astra`（复杂推理与编程）或 `gpt-5.6-luna`） |
 
 填写后 Cursor 会自动发一条测试请求来验证连接。如果失败，页面会显示错误信息。
 
